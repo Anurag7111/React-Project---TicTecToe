@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Grid.css';
 
 export default function Grid() {
-    const [text, setText] = useState('');
+    const [text, setText] = useState('X');
     const [cells, setCells] = useState(Array(9).fill(''))
     const [winner, setWinner] = useState('pending');
 
@@ -79,29 +79,29 @@ export default function Grid() {
 
     return (
         <div className='content'>
-        <h1 className='heading'>Tic Tec Toe</h1>
-        <p>Turn: {text}</p>
-        <table>
-            <tbody>
-                <tr>
-                    <Cell num={0}/>
-                    <Cell num={1}/>
-                    <Cell num={2}/>
-                </tr>
-                <tr>
-                    <Cell num={3}/>
-                    <Cell num={4}/>
-                    <Cell num={5}/>
-                </tr>
-                <tr>
-                    <Cell num={6}/>
-                    <Cell num={7}/>
-                    <Cell num={8}/>
-                </tr>
-            </tbody>
-        </table>
-        <h3>The Winner Is {winner}.</h3>
-        <button onClick={resetAll}>Play Again</button>
+            <h1 className='heading'>Tic Tec Toe</h1>
+            <p>Turn: {text}</p>
+            <table>
+                <tbody>
+                    <tr>
+                        <Cell num={0}/>
+                        <Cell num={1}/>
+                        <Cell num={2}/>
+                    </tr>
+                    <tr>
+                        <Cell num={3}/>
+                        <Cell num={4}/>
+                        <Cell num={5}/>
+                    </tr>
+                    <tr>
+                        <Cell num={6}/>
+                        <Cell num={7}/>
+                        <Cell num={8}/>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>The Winner Is {winner}.</h3>
+            <button onClick={resetAll}>Play Again</button>
         </div>
     )
 }
