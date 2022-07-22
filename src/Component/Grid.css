@@ -5,12 +5,11 @@
     align-items: center;
     flex-direction: column;
 }
-/* .heading {
-    display: flex;
-    text-align: center;
-} */
+.heading {
+    border-bottom: 2px solid black;
+}
 table td {
-    border: 2px solid grey;
+    border: 3px solid grey;
     width: 150px;
     height: 150px;
     font-size: 35px;
